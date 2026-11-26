@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ack-1",
+    "gateway": "gw-1",
+    "revision": "r3",
+    "state": "accepted",
+    "applied": null
+  },
+  {
+    "id": "old-2",
+    "gateway": "gw-2",
+    "revision": "r2",
+    "observed": 43,
+    "received": 54
+  },
+  {
+    "id": "expect-r2",
+    "gateway": "gw-2",
+    "revision": "r2",
+    "verified": true,
+    "at": 40
+  }
+]

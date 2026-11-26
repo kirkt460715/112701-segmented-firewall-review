@@ -1,0 +1,54 @@
+[
+  {
+    "id": "obj-a",
+    "gateway": "gw-1",
+    "object": "support",
+    "members": [
+      "a-support",
+      "b-support"
+    ]
+  },
+  {
+    "id": "obj-b",
+    "gateway": "gw-2",
+    "object": "support",
+    "members": [
+      "b-support"
+    ]
+  },
+  {
+    "id": "rule-review",
+    "candidate": "r3",
+    "changes": [
+      {
+        "gateway": "gw-1",
+        "scope": "support",
+        "action": "deny",
+        "position": 5
+      }
+    ]
+  },
+  {
+    "id": "expected-1",
+    "records": [
+      [
+        "gw-1",
+        "b-support",
+        "maint",
+        "allow"
+      ],
+      [
+        "gw-1",
+        "a-support",
+        "maint",
+        "deny"
+      ],
+      [
+        "gw-2",
+        "sensors",
+        "upload",
+        "allow"
+      ]
+    ]
+  }
+]

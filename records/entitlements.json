@@ -1,0 +1,26 @@
+[
+  {
+    "id": "keep-b",
+    "owner": "county-b",
+    "origin_zone": "b-support",
+    "service": "maint",
+    "direction": "inbound",
+    "expires": 90
+  },
+  {
+    "id": "revoke-a",
+    "owner": "county-a",
+    "origin_zone": "a-support",
+    "service": "maint",
+    "direction": "inbound",
+    "effective": 45
+  },
+  {
+    "id": "data-ok",
+    "owner": "joint",
+    "origin_zone": "sensors",
+    "service": "upload",
+    "direction": "outbound",
+    "expires": 120
+  }
+]
